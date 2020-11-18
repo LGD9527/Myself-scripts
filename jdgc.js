@@ -137,48 +137,6 @@ async function collectElectricity() {
     })
 }
 
-//每日巡厂API
-async function DailyElectricity() {
-    const time = new Date();
-    var now = time.getHours();
-    if (10 <= now <= 13) {
-        if ($.homeData.data.result.taskVos[7].times === $.homeData.data.result.taskVos[7].maxTimes) {
-            console.log('任务已经做过了');
-        } else {
-            const functionId = 'jdfactory_collectScore';
-            const taskToken = $.homeData.data.result.taskVos[7].threeMealInfoVos.taskToken;
-            const body = `'taskToken':'${taskToken}'`;
-            const host = `api.m.jd.com`;
-            $.DailyElectricityResult = await request(functionId, body, host);
-            if ($.DailyElectricityResult.data.bizCode === 0) {
-                console.log($.DailyElectricityResult.data.bizMsg);
-            } else {
-                console.log($.DailyElectricityResult.data.bizMsg);
-            }
-        }
-    }
-}
-
-function request(functionId, body, host, ContentType) {
-    return new Promise(resolve => {
-        $.post(taskPostUrl(functionId, body, host, ContentType), (err, resp, data) => {
-            try {
-                if (err) {
-                    console.log('\n京东工厂: API查询请求失败 ‼️‼️')
-                    console.log(JSON.stringify(err));
-                    $.logErr(err);
-                } else {
-                    data = JSON.parse(data);
-                }
-            } catch (e) {
-                $.logErr(e, resp);
-            } finally {
-                resolve(data);
-            }
-        })
-    })
-}
-
 function taskUrl(function_id, body = {}) {
     return {
         url: `${JD_API_HOST}?functionId=${function_id}&body=${escape(JSON.stringify(body))}&clientVersion=1.0.0&client=wh5`,
