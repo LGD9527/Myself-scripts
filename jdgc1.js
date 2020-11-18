@@ -35,7 +35,6 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
             console.log(`\n===============开始【京东账号${$.UserName}】==================\n`);
             $.errorMsg = '';
             $.index = i + 1;
-            await jdFactory();
             await collectElectricity();
           //await showMsg();
         }
