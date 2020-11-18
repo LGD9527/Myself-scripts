@@ -36,7 +36,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
             $.errorMsg = '';
             $.index = i + 1;
             await collectElectricity();
-          //await showMsg();
+            await showMsg();
         }
     }
 })()
