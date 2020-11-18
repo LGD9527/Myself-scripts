@@ -37,14 +37,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
             $.index = i + 1;
             await jdFactory();
             await jdfactory_getTaskDetail();
-            await doDailyTask();
-            await meetList();
-            await shopList();
-            await followList();
             await collectElectricity();
-            await DailyElectricity();
-            await addEnergy();
-            await showMsg();
+           // await showMsg(); 
         }
     }
 })()
