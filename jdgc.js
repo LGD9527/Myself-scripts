@@ -35,9 +35,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
             console.log(`\n===============开始【京东账号${$.UserName}】==================\n`);
             $.errorMsg = '';
             $.index = i + 1;
-            await jdFactory();
             await collectElectricity();
-           // await showMsg(); 
+            await showMsg();
         }
     }
 })()
@@ -56,20 +55,6 @@ function showMsg() {
         if (!jdNotify || jdNotify === 'false') {
             $.msg($.name, subTitle, `【京东账号${$.index}】${UserName}\n` + message);
         }
-    }
-}
-async function jdFactory() {
-    await initForfactory();
-    if ($.factoryInfo.data.result.haveProduct === 1) {
-        console.log(`\n【产品名称】${$.factoryInfo.data.result.factoryInfo.name}` + `  剩余:${$.factoryInfo.data.result.factoryInfo.couponCount}`);
-        subTitle = `【产品名称】${$.factoryInfo.data.result.factoryInfo.name}` + `  剩余:${$.factoryInfo.data.result.factoryInfo.couponCount}`
-    } else if (!$.factoryInfo.data.result.factoryInfo.totalScore) {
-        //未开始生产新商品
-        $.msg($.name, `【提醒⏰】请重新选择产品`);
-        if ($.isNode()) {
-            await notify.sendNotify(`${$.name}请重新选择产品`);
-        }
-        return
     }
 }
 
@@ -125,6 +110,26 @@ async function collectElectricity() {
                 $.logErr(e, resp)
             } finally {
                 resolve();
+            }
+        })
+    })
+}
+
+function request(functionId, body, host, ContentType) {
+    return new Promise(resolve => {
+        $.post(taskPostUrl(functionId, body, host, ContentType), (err, resp, data) => {
+            try {
+                if (err) {
+                    console.log('\n京东工厂: API查询请求失败 ‼️‼️')
+                    console.log(JSON.stringify(err));
+                    $.logErr(err);
+                } else {
+                    data = JSON.parse(data);
+                }
+            } catch (e) {
+                $.logErr(e, resp);
+            } finally {
+                resolve(data);
             }
         })
     })
