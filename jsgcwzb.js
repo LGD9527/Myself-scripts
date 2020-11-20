@@ -74,8 +74,8 @@ async function jdDreamFactory() {
   await getUserElectricity();
   await taskList();
   //await investElectric();
-  await assistFriend('bpi9zb_MrMJCEsnZTR8O7w==');
-  await collectElectricity();
+  await assistFriend('gB99tYLjvPcEFloDgamoBw==''bpi9zb_MrMJCEsnZTR8O7w==''XGPWIKqcGId6ekJmy_jBpg==');
+  //await collectElectricity();
   await hireAward();
   await stealFriend();
   await showMsg();
