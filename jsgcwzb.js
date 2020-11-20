@@ -1,8 +1,10 @@
 /*
-京东京喜工厂
+京喜工厂完整版,不投入电力，只做任务，每天早上6点以后运行一次即可，招工电力要在6点以后收取
+原脚本地址https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
+感谢@lxk0301
 活动入口 :京东APP->游戏与互动->查看更多->京喜工厂
 或者: 京东APP首页搜索 "玩一玩" ,造物工厂即可
-cron 15 * * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
+cron  10 9 * * * https://raw.githubusercontent.com/LGD9527/Myself-scripts/master/jsgcwzb.js
  */
 
 
