@@ -1,8 +1,8 @@
 /*
-京东京喜工厂
+京东京喜工厂只收电力，只有在电力满的时候才会双倍收取，据测试，300电力存满时间为50分钟，可根据自己最大电力调整cron
 活动入口 :京东APP->游戏与互动->查看更多->京喜工厂
 或者: 京东APP首页搜索 "玩一玩" ,造物工厂即可
-cron 15 * * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
+cron */10 * * * * https://raw.githubusercontent.com/LGD9527/Myself-scripts/master/jxgcsdl.js
  */
 
 
