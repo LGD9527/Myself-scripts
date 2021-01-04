@@ -1,78 +1,42 @@
 
-/*ziye
 
-±¾ÈËgithubµØÖ·     https://github.com/ziye12/JavaScript 
-×ªÔØÇë±¸×¢¸öÃû×Ö£¬Ğ»Ğ»
 
-11.25 Ôö¼Ó ÔÄ¶ÁÊ±³¤ÉÏ´«£¬ÔÄ¶Á½ğ±Ò£¬ÔÄ¶ÁËæ»ú½ğ±Ò
-11.25 ĞŞ¸´·­±¶±¦Ïä²»Í¬Ê±ÁìÈ¡µÄÎÊÌâ.Ôö¼ÓÔÄ¶Á½ğ±ÒÅĞ¶¨
-11.25 ĞŞ¸´ÔÄ¶ÁÊ±³¤ÎÊÌâ£¬ÔÄ¶Á½ğ±ÒÎÊÌâ£¬ÇëÖØĞÂ»ñÈ¡Ê±³¤cookie
-11.26 Ëæ»ú½ğ±ÒÖ»ÓĞÒ»´Î£¬¹ÊÈ¥³ı£¬µ÷ÕûĞŞ¸´ÔÄ¶Á½ğ±ÒÎÊÌâ£¬Ôö¼ÓÊ±³¤ÉÏ´«ÏŞÖÆ
-11.26 Ôö¼ÓÁìÈ¡ÖÜÊ±³¤½±Àø
-11.26 Ôö¼Ó½áÊøÃüÁî
-11.27 µ÷ÕûÍ¨ÖªÎª£¬³É¹¦¿ªÆô±¦ÏäÔÙÍ¨Öª
-11.28 ĞŞ¸´´íÎó
-12.1 µ÷ÕûÍ¨ÖªÎª15´Î±¦ÏäÍ¨ÖªÒ»´Î
-12.1 ÓÅ»¯Í¨Öª
-12.2 ĞŞ¸´Æó¶ì¸üĞÂ´ò¿¨²»ÁËµÄÎÊÌâ
+//cookieè·å–æ–¹æ³•ï¼š
 
-??cookie»ñÈ¡·½·¨£º
+//è¿› https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a  ç‚¹æˆ‘çš„   è·å–cookie
 
-½ø https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a  µãÎÒµÄ   »ñÈ¡cookie
+//è¿›ä¸€æœ¬ä¹¦ çœ‹ 10ç§’ä»¥ä¸‹ ç„¶åé€€å‡ºï¼Œè·å–é˜…è¯»æ—¶é•¿cookieï¼Œçœ‹ä¹¦ä¸€å®šä¸èƒ½è¶…è¿‡10ç§’
 
-½øÒ»±¾Êé ¿´ 10ÃëÒÔÏÂ È»ºóÍË³ö£¬»ñÈ¡ÔÄ¶ÁÊ±³¤cookie£¬¿´ÊéÒ»¶¨²»ÄÜ³¬¹ı10Ãë
-
-¿ÉÄÜÄ³Ğ©Ò³Ãæ»á¿¨×¡£¬µ«ÊÇÄÜ»ñÈ¡µ½cookie£¬ÔÙ×¢ÊÍcookieÖØĞ´¾ÍĞĞÁË£¡
+//å¯èƒ½æŸäº›é¡µé¢ä¼šå¡ä½ï¼Œä½†æ˜¯èƒ½è·å–åˆ°cookieï¼Œå†æ³¨é‡Šcookieé‡å†™å°±è¡Œäº†ï¼
 
 
 
-??±¦Ïä½±ÀøÎª20·ÖÖÓÒ»´Î£¬×Ô¼º¸ù¾İÇé¿öÉèÖÃ¶¨Ê±£¬½¨ÒéÉèÖÃ11·ÖÖÓÒ»´Î
+//å®ç®±å¥–åŠ±ä¸º20åˆ†é’Ÿä¸€æ¬¡ï¼Œè‡ªå·±æ ¹æ®æƒ…å†µè®¾ç½®å®šæ—¶ï¼Œå»ºè®®è®¾ç½®11åˆ†é’Ÿä¸€æ¬¡
 
-hostname=mqqapi.reader.qq.com
-
-############## È¦x
-
-#Æó¶ì¶ÁÊé»ñÈ¡cookie
-https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
-
-#Æó¶ì¶ÁÊé»ñÈ¡Ê±³¤cookie
-https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
+//hostname=mqqapi.reader.qq.com
 
 
-############## loon
+//ä¼é¹…è¯»ä¹¦è·å–cookie
+//https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
 
-//Æó¶ì¶ÁÊé»ñÈ¡cookie
-http-request https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js,requires-header=true, tag=Æó¶ì¶ÁÊé»ñÈ¡cookie 
-
-//Æó¶ì¶ÁÊé»ñÈ¡Ê±³¤cookie
-http-request https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true, tag=Æó¶ì¶ÁÊé»ñÈ¡Ê±³¤cookie
+//ä¼é¹…è¯»ä¹¦è·å–æ—¶é•¿cookie
+//https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid? url script-request-header https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
 
 
-############## surge
-
-//Æó¶ì¶ÁÊé»ñÈ¡cookie
-Æó¶ì¶ÁÊé = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
-
-//Æó¶ì¶ÁÊé»ñÈ¡Ê±³¤cookie
-Æó¶ì¶ÁÊé = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
-
-
-*/
-
-const jsname='Æó¶ì¶ÁÊé'
+const jsname='ä¼é¹…è¯»ä¹¦'
 const $ = Env(jsname)
 
-console.log(`\n========= ½Å±¾Ö´ĞĞÊ±¼ä(TM)£º${new Date(new Date().getTime() + 0 * 60 * 60 * 1000).toLocaleString('zh', {hour12: false})} =========\n`)
+console.log(`\n========= è„šæœ¬æ‰§è¡Œæ—¶é—´(TM)ï¼š${new Date(new Date().getTime() + 0 * 60 * 60 * 1000).toLocaleString('zh', {hour12: false})} =========\n`)
 
-const logs = 0;   //0Îª¹Ø±ÕÈÕÖ¾£¬1Îª¿ªÆô
+const logs = 0;   //0ä¸ºå…³é—­æ—¥å¿—ï¼Œ1ä¸ºå¼€å¯
 const notifyInterval=3
-//0Îª¹Ø±ÕÍ¨Öª£¬1ÎªËùÓĞÍ¨Öª£¬2Îª±¦ÏäÁìÈ¡³É¹¦Í¨Öª£¬3Îª±¦ÏäÃ¿15´ÎÍ¨ÖªÒ»´Î
+//0ä¸ºå…³é—­é€šçŸ¥ï¼Œ1ä¸ºæ‰€æœ‰é€šçŸ¥ï¼Œ2ä¸ºå®ç®±é¢†å–æˆåŠŸé€šçŸ¥ï¼Œ3ä¸ºå®ç®±æ¯15æ¬¡é€šçŸ¥ä¸€æ¬¡
 
-const jbid=1//»»ºÅÔòĞŞ¸ÄÕâ¸öÖµ,Ä¬ÈÏÕËºÅ1
-const dd=1//µ¥´ÎÈÎÎñÑÓ³Ù,Ä¬ÈÏ1Ãë
-const TIME=30//µ¥´ÎÊ±³¤ÉÏ´«ÏŞÖÆ£¬Ä¬ÈÏ5·ÖÖÓ
-const maxtime=20//Ã¿ÈÕÉÏ´«Ê±³¤ÏŞÖÆ£¬Ä¬ÈÏ20Ğ¡Ê±
-const wktimess=1200//ÖÜ½±ÀøÁìÈ¡±ê×¼£¬Ä¬ÈÏ1200·ÖÖÓ
+const jbid=1//æ¢å·åˆ™ä¿®æ”¹è¿™ä¸ªå€¼,é»˜è®¤è´¦å·1
+const dd=1//å•æ¬¡ä»»åŠ¡å»¶è¿Ÿ,é»˜è®¤1ç§’
+const TIME=30//å•æ¬¡æ—¶é•¿ä¸Šä¼ é™åˆ¶ï¼Œé»˜è®¤5åˆ†é’Ÿ
+const maxtime=20//æ¯æ—¥ä¸Šä¼ æ—¶é•¿é™åˆ¶ï¼Œé»˜è®¤20å°æ—¶
+const wktimess=1200//å‘¨å¥–åŠ±é¢†å–æ ‡å‡†ï¼Œé»˜è®¤1200åˆ†é’Ÿ
 var tz=''
 
 const qqreadurlKey = 'qqreadurl'+jbid
@@ -88,7 +52,7 @@ const qqreadtimeheaderKey = 'qqreadtimehd'+jbid
 const qqreadtimeheaderVal= $.getdata(qqreadtimeheaderKey)
 
 
-//CKÔËĞĞ
+//CKè¿è¡Œ
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
    GetCookie()
@@ -102,29 +66,29 @@ function GetCookie() {
 
   const qqreadurlVal = $request.url
 if (qqreadurlVal)        $.setdata(qqreadurlVal,qqreadurlKey)
-    $.log(`[${jsname}] »ñÈ¡urlÇëÇó: ³É¹¦,qqreadurlVal: ${qqreadurlVal}`)
+    $.log(`[${jsname}] è·å–urlè¯·æ±‚: æˆåŠŸ,qqreadurlVal: ${qqreadurlVal}`)
 
   const qqreadbodyVal = $request.body
     if (qqreadbodyVal)   $.setdata(qqreadbodyVal,qqreadbodyKey)
-    $.log(`[${jsname}] »ñÈ¡ÔÄ¶Á: ³É¹¦,qqreadbodyVal: ${qqreadbodyVal}`)
+    $.log(`[${jsname}] è·å–é˜…è¯»: æˆåŠŸ,qqreadbodyVal: ${qqreadbodyVal}`)
 
     
  const qqreadheaderVal = JSON.stringify($request.headers)
     if (qqreadheaderVal)  $.setdata(qqreadheaderVal,qqreadheaderKey)
-    $.log(`[${jsname}] »ñÈ¡Cookie: ³É¹¦,qqreadheaderVal: ${qqreadheaderVal}`)
-    $.msg(qqreadheaderKey, `»ñÈ¡cookie: ³É¹¦??`, ``)
+    $.log(`[${jsname}] è·å–Cookie: æˆåŠŸ,qqreadheaderVal: ${qqreadheaderVal}`)
+    $.msg(qqreadheaderKey, `è·å–cookie: æˆåŠŸ??`, ``)
   
 }
 
 else if($request &&$request.url.indexOf("addReadTimeWithBid?")>=0) {
  const qqreadtimeurlVal = $request.url
 if (qqreadtimeurlVal)   $.setdata(qqreadtimeurlVal,qqreadtimeurlKey)
-    $.log(`[${jsname}] »ñÈ¡ÔÄ¶ÁÊ±³¤url: ³É¹¦,qqreadtimeurlVal: ${qqreadtimeurlVal}`)
+    $.log(`[${jsname}] è·å–é˜…è¯»æ—¶é•¿url: æˆåŠŸ,qqreadtimeurlVal: ${qqreadtimeurlVal}`)
 
 const qqreadtimeheaderVal = JSON.stringify($request.headers)
     if (qqreadtimeheaderVal)        $.setdata(qqreadtimeheaderVal,qqreadtimeheaderKey)
-    $.log(`[${jsname}] »ñÈ¡Ê±³¤header: ³É¹¦,qqreadtimeheaderVal: ${qqreadtimeheaderVal}`)
-    $.msg(qqreadtimeheaderKey, `»ñÈ¡ÔÄ¶ÁÊ±³¤cookie: ³É¹¦??`, ``)
+    $.log(`[${jsname}] è·å–æ—¶é•¿header: æˆåŠŸ,qqreadtimeheaderVal: ${qqreadtimeheaderVal}`)
+    $.msg(qqreadtimeheaderKey, `è·å–é˜…è¯»æ—¶é•¿cookie: æˆåŠŸ??`, ``)
 
  }
 
@@ -140,58 +104,58 @@ function all()
  { (function(i) {
             setTimeout(function() {
      if (i==0)
-qqreadinfo();//ÓÃ»§Ãû
+qqreadinfo();//ç”¨æˆ·å
 
 else if (i==1)
-qqreadconfig();//Ê±³¤²éÑ¯
+qqreadconfig();//æ—¶é•¿æŸ¥è¯¢
 
 else if (i==2)
-qqreadtask();//ÈÎÎñÁĞ±í
+qqreadtask();//ä»»åŠ¡åˆ—è¡¨
 
 else if (i==3&&task.data.taskList[2].doneFlag==0)
-qqreadsign();//½ğ±ÒÇ©µ½
+qqreadsign();//é‡‘å¸ç­¾åˆ°
 
 else if (i==4&&task.data.treasureBox.doneFlag==0)
-qqreadbox();//±¦Ïä
+qqreadbox();//å®ç®±
 
 else if (i==5&&task.data.taskList[1].doneFlag==0)
-qqreadssr1();//ÔÄ¶Á½ğ±Ò1
+qqreadssr1();//é˜…è¯»é‡‘å¸1
 
 else if (i==6&&config.data.pageParams.todayReadSeconds/3600<=maxtime)
-qqreadtime();//ÉÏ´«Ê±³¤
+qqreadtime();//ä¸Šä¼ æ—¶é•¿
 
 else if (i==7&&task.data.taskList[2].doneFlag==0)
-qqreadtake();//ÔÄ¶¹Ç©µ½
+qqreadtake();//é˜…è±†ç­¾åˆ°
 
 else if (i==8&&task.data.taskList[0].doneFlag==0)
-qqreaddayread();//ÔÄ¶ÁÈÎÎñ
+qqreaddayread();//é˜…è¯»ä»»åŠ¡
 
 else if (i==9&&task.data.taskList[1].doneFlag==0)
-qqreadssr2();//ÔÄ¶Á½ğ±Ò2
+qqreadssr2();//é˜…è¯»é‡‘å¸2
 
 else if (i==10&&task.data.taskList[3].doneFlag==0)
-qqreadvideo();//ÊÓÆµÈÎÎñ
+qqreadvideo();//è§†é¢‘ä»»åŠ¡
 
 else if(i==11&&task.data.taskList[2].doneFlag==0)
-qqreadsign2();//Ç©µ½·­±¶
+qqreadsign2();//ç­¾åˆ°ç¿»å€
 
 else if (i==12&&task.data.treasureBox.videoDoneFlag==0)
-qqreadbox2();//±¦Ïä·­±¶
+qqreadbox2();//å®ç®±ç¿»å€
 
 else if (i==13&&task.data.taskList[1].doneFlag==0)
-qqreadssr3();//ÔÄ¶Á½ğ±Ò3
+qqreadssr3();//é˜…è¯»é‡‘å¸3
 
 else if (i==14)
-qqreadwktime();//ÖÜÊ±³¤²éÑ¯
+qqreadwktime();//å‘¨æ—¶é•¿æŸ¥è¯¢
 
 else if (i==15)
-qqreadpick();//ÁìÖÜÊ±³¤½±Àø
+qqreadpick();//é¢†å‘¨æ—¶é•¿å¥–åŠ±
 
 else if (i==16)
-showmsg();//Í¨Öª
+showmsg();//é€šçŸ¥
 
 else if (i==17)
-$.done();//½áÊø
+$.done();//ç»“æŸ
 
     }
 , (i + 1) *dd*1000);
@@ -200,70 +164,70 @@ $.done();//½áÊø
 }
 
 
-//ÈÎÎñÁĞ±í
+//ä»»åŠ¡åˆ—è¡¨
 function qqreadtask() {
 return new Promise((resolve, reject) => {
   const toqqreadtaskurl ={url: 'https://mqqapi.reader.qq.com/mqq/red_packet/user/page?fromGuid=',
    headers: JSON.parse(qqreadheaderVal),    
  timeout:60000};
    $.get(toqqreadtaskurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÈÎÎñÁĞ±í: ${data}`)
+     if(logs) $.log(`${jsname}, ä»»åŠ¡åˆ—è¡¨: ${data}`)
      task =JSON.parse(data)
 tz+=
-'¡¾ÏÖ½ğÓà¶î¡¿:'+
+'ã€ç°é‡‘ä½™é¢ã€‘:'+
     (task.data.user.amount/10000).toFixed(2)+
-	'Ôª\n'+
-    '¡¾µÚ'+
+	'å…ƒ\n'+
+    'ã€ç¬¬'+
 	task.data.invite.issue+
-	'ÆÚ¡¿:Ê±¼ä'+
+	'æœŸã€‘:æ—¶é—´'+
     task.data.invite.dayRange+
 	'\n'+
-    ' ÒÑÑûÇë'+
+    ' å·²é‚€è¯·'+
 	task.data.invite.inviteCount+
-    'ÈË£¬ÔÙÑûÇë'+
+    'äººï¼Œå†é‚€è¯·'+
 	task.data.invite.nextInviteConfig.count+
-    'ÈË»ñµÃ'+
+    'äººè·å¾—'+
 	task.data.invite.nextInviteConfig.amount+
-	'½ğ±Ò\n'+
-    '¡¾'+
+	'é‡‘å¸\n'+
+    'ã€'+
 	task.data.taskList[0].title+
-	'¡¿:'+
+	'ã€‘:'+
     task.data.taskList[0].amount+
-	'½ğ±Ò,'+
+	'é‡‘å¸,'+
     task.data.taskList[0].actionText+
 	'\n'+
-    '¡¾'+
+    'ã€'+
 	task.data.taskList[1].title+
-	'¡¿:'+
+	'ã€‘:'+
     task.data.taskList[1].amount+
-	'½ğ±Ò,'+
+	'é‡‘å¸,'+
     task.data.taskList[1].actionText+
 	'\n'+
-    '¡¾'+
+    'ã€'+
 	task.data.taskList[2].title+
-	'¡¿:'+
+	'ã€‘:'+
     task.data.taskList[2].amount+
-    '½ğ±Ò,'+
+    'é‡‘å¸,'+
     task.data.taskList[2].actionText+
     '\n'+
-    '¡¾'+
+    'ã€'+
 	task.data.taskList[3].title+
-    '¡¿:'+
+    'ã€‘:'+
     task.data.taskList[3].amount+
-    '½ğ±Ò,'+
+    'é‡‘å¸,'+
     task.data.taskList[3].actionText+
     '\n'+
-    '¡¾±¦ÏäÈÎÎñ'+
+    'ã€å®ç®±ä»»åŠ¡'+
     (task.data.treasureBox.count+1)+
-    '¡¿:'+
+    'ã€‘:'+
     task.data.treasureBox.tipText+
     '\n'+
-    '¡¾'+task.data.fans.title+
-	'¡¿:'+
+    'ã€'+task.data.fans.title+
+	'ã€‘:'+
     task.data.fans.fansCount+
-    '¸öºÃÓÑ,'+
+    'ä¸ªå¥½å‹,'+
     task.data.fans.todayAmount+
-    '½ğ±Ò\n'
+    'é‡‘å¸\n'
 
 resolve()
 
@@ -273,7 +237,7 @@ resolve()
   }  
 
 
-//ÓÃ»§Ãû
+//ç”¨æˆ·å
 function qqreadinfo() {
 return new Promise((resolve, reject) => {
   const toqqreadinfourl = {
@@ -281,10 +245,10 @@ return new Promise((resolve, reject) => {
     headers: JSON.parse(qqreadheaderVal),    
  timeout:60000};
    $.get(toqqreadinfourl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÓÃ»§Ãû: ${data}`)
+     if(logs) $.log(`${jsname}, ç”¨æˆ·å: ${data}`)
      info =JSON.parse(data)
 tz+=
-'¡¾ÓÃ»§ĞÅÏ¢¡¿:'+info.data.user.nickName+'\n'
+'ã€ç”¨æˆ·ä¿¡æ¯ã€‘:'+info.data.user.nickName+'\n'
 
 resolve()
     })
@@ -292,19 +256,19 @@ resolve()
   }  
 
 
-//ÔÄ¶¹Ç©µ½
+//é˜…è±†ç­¾åˆ°
 function qqreadtake() {
 return new Promise((resolve, reject) => {
   const toqqreadtakeurl ={url: 'https://mqqapi.reader.qq.com/mqq/sign_in/user',
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.post(toqqreadtakeurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÔÄ¶¹Ç©µ½: ${data}`)
+     if(logs) $.log(`${jsname}, é˜…è±†ç­¾åˆ°: ${data}`)
      take =JSON.parse(data)
 if (take.data.takeTicket>0)
  {
 tz+=
-'¡¾ÔÄ¶¹Ç©µ½¡¿:»ñµÃ'+take.data.takeTicket+'¶¹\n'
+'ã€é˜…è±†ç­¾åˆ°ã€‘:è·å¾—'+take.data.takeTicket+'è±†\n'
 }
 
 resolve()
@@ -313,7 +277,7 @@ resolve()
   }  
 
 
-//ÔÄ¶ÁÊ±³¤ÈÎÎñ
+//é˜…è¯»æ—¶é•¿ä»»åŠ¡
 function qqreadconfig() {
 return new Promise((resolve, reject) => {
   const toqqreadconfigurl = {
@@ -321,10 +285,10 @@ return new Promise((resolve, reject) => {
     headers: JSON.parse(qqreadheaderVal),
     };
    $.get(toqqreadconfigurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÔÄ¶ÁÊ±³¤²éÑ¯: ${data}`)
+     if(logs) $.log(`${jsname}, é˜…è¯»æ—¶é•¿æŸ¥è¯¢: ${data}`)
      config =JSON.parse(data)
    if (config.code==0)
-tz+='¡¾Ê±³¤²éÑ¯¡¿:½ñÈÕÔÄ¶Á'+(config.data.pageParams.todayReadSeconds/60).toFixed(0)+'·ÖÖÓ\n'
+tz+='ã€æ—¶é•¿æŸ¥è¯¢ã€‘:ä»Šæ—¥é˜…è¯»'+(config.data.pageParams.todayReadSeconds/60).toFixed(0)+'åˆ†é’Ÿ\n'
 
 
 resolve()
@@ -333,7 +297,7 @@ resolve()
   } 
 
 
-//ÔÄ¶ÁÊ±³¤
+//é˜…è¯»æ—¶é•¿
 function qqreadtime() {
 return new Promise((resolve, reject) => {
   const toqqreadtimeurl = {
@@ -343,10 +307,10 @@ return new Promise((resolve, reject) => {
     };
 	
    $.get(toqqreadtimeurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÔÄ¶ÁÊ±³¤: ${data}`)
+     if(logs) $.log(`${jsname}, é˜…è¯»æ—¶é•¿: ${data}`)
      time =JSON.parse(data)
      if (time.code==0)
-tz+='¡¾ÔÄ¶ÁÊ±³¤¡¿:ÉÏ´«'+TIME/6+'·ÖÖÓ\n'
+tz+='ã€é˜…è¯»æ—¶é•¿ã€‘:ä¸Šä¼ '+TIME/6+'åˆ†é’Ÿ\n'
 
 
 resolve()
@@ -355,7 +319,7 @@ resolve()
   }  
 
 
-//ÔÄ¶Á½ğ±Ò1
+//é˜…è¯»é‡‘å¸1
 function qqreadssr1() {
 return new Promise((resolve, reject) => {
   const toqqreadssr1url = {url: `https://mqqapi.reader.qq.com/mqq/red_packet/user/read_time?seconds=30`,
@@ -364,10 +328,10 @@ return new Promise((resolve, reject) => {
 if (config.data.pageParams.todayReadSeconds/60>=1){
 
    $.get(toqqreadssr1url,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ½ğ±Ò½±Àø1: ${data}`)
+     if(logs) $.log(`${jsname}, é‡‘å¸å¥–åŠ±1: ${data}`)
      ssr1 =JSON.parse(data)
 	if (ssr1.data.amount>0)   
-tz+='¡¾ÔÄ¶Á½ğ±Ò1¡¿»ñµÃ'+ssr1.data.amount+'½ğ±Ò\n'
+tz+='ã€é˜…è¯»é‡‘å¸1ã€‘è·å¾—'+ssr1.data.amount+'é‡‘å¸\n'
 
 
 resolve()
@@ -377,7 +341,7 @@ resolve()
   }  
 
 
-//ÔÄ¶Á½ğ±Ò2
+//é˜…è¯»é‡‘å¸2
 function qqreadssr2() {
 return new Promise((resolve, reject) => {
   const toqqreadssr2url = {url: `https://mqqapi.reader.qq.com/mqq/red_packet/user/read_time?seconds=300`,
@@ -386,10 +350,10 @@ return new Promise((resolve, reject) => {
 if (config.data.pageParams.todayReadSeconds/60>=5){
 
    $.get(toqqreadssr2url,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ½ğ±Ò½±Àø2: ${data}`)
+     if(logs) $.log(`${jsname}, é‡‘å¸å¥–åŠ±2: ${data}`)
      ssr2 =JSON.parse(data)
 	if (ssr2.data.amount>0)   
-tz+='¡¾ÔÄ¶Á½ğ±Ò2¡¿»ñµÃ'+ssr2.data.amount+'½ğ±Ò\n'
+tz+='ã€é˜…è¯»é‡‘å¸2ã€‘è·å¾—'+ssr2.data.amount+'é‡‘å¸\n'
 
 resolve()
     })
@@ -398,7 +362,7 @@ resolve()
   }  
 
 
-//ÔÄ¶Á½ğ±Ò3
+//é˜…è¯»é‡‘å¸3
 function qqreadssr3() {
 return new Promise((resolve, reject) => {
   const toqqreadssr3url = {url: `https://mqqapi.reader.qq.com/mqq/red_packet/user/read_time?seconds=1800`,
@@ -408,10 +372,10 @@ return new Promise((resolve, reject) => {
 if (config.data.pageParams.todayReadSeconds/60>=30){
 
    $.get(toqqreadssr3url,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ½ğ±Ò½±Àø3: ${data}`)
+     if(logs) $.log(`${jsname}, é‡‘å¸å¥–åŠ±3: ${data}`)
      ssr3 =JSON.parse(data)
 	if (ssr3.data.amount>0)   
-tz+='¡¾ÔÄ¶Á½ğ±Ò3¡¿»ñµÃ'+ssr3.data.amount+'½ğ±Ò\n'
+tz+='ã€é˜…è¯»é‡‘å¸3ã€‘è·å¾—'+ssr3.data.amount+'é‡‘å¸\n'
 
 
 resolve()
@@ -421,20 +385,20 @@ resolve()
   }  
 
 
-//½ğ±ÒÇ©µ½
+//é‡‘å¸ç­¾åˆ°
 function qqreadsign() {
 return new Promise((resolve, reject) => {
   const toqqreadsignurl ={url: 'https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in/page',
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreadsignurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ½ğ±ÒÇ©µ½: ${data}`)
+     if(logs) $.log(`${jsname}, é‡‘å¸ç­¾åˆ°: ${data}`)
      sign =JSON.parse(data)
 
 if (sign.data.videoDoneFlag)
  {
 tz+=
-'¡¾½ğ±ÒÇ©µ½¡¿:»ñµÃ'+sign.data.todayAmount+'½ğ±Ò\n'
+'ã€é‡‘å¸ç­¾åˆ°ã€‘:è·å¾—'+sign.data.todayAmount+'é‡‘å¸\n'
     }
 
 
@@ -444,20 +408,20 @@ resolve()
   }  
 
 
-//½ğ±ÒÇ©µ½·­±¶
+//é‡‘å¸ç­¾åˆ°ç¿»å€
 function qqreadsign2() {
 return new Promise((resolve, reject) => {
   const toqqreadsign2url ={url: 'https://mqqapi.reader.qq.com/mqq/red_packet/user/clock_in_video',
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreadsign2url,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ½ğ±ÒÇ©µ½·­±¶: ${data}`)
+     if(logs) $.log(`${jsname}, é‡‘å¸ç­¾åˆ°ç¿»å€: ${data}`)
      sign2 =JSON.parse(data)
 
 if (sign2.code==0)
  {
 tz+=
-'¡¾Ç©µ½·­±¶¡¿:»ñµÃ'+sign2.data.amount+'½ğ±Ò\n'
+'ã€ç­¾åˆ°ç¿»å€ã€‘:è·å¾—'+sign2.data.amount+'é‡‘å¸\n'
 }
 
 resolve()
@@ -466,19 +430,19 @@ resolve()
   }  
 
 
-//Ã¿ÈÕÔÄ¶Á
+//æ¯æ—¥é˜…è¯»
 function qqreaddayread() {
 return new Promise((resolve, reject) => {
   const toqqreaddayreadurl ={url: 'https://mqqapi.reader.qq.com/mqq/red_packet/user/read_book',
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreaddayreadurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, Ã¿ÈÕÔÄ¶Á: ${data}`)
+     if(logs) $.log(`${jsname}, æ¯æ—¥é˜…è¯»: ${data}`)
      dayread =JSON.parse(data)
 if (dayread.code==0)
  {
 tz+=
-'¡¾Ã¿ÈÕÔÄ¶Á¡¿:»ñµÃ'+dayread.data.amount+'½ğ±Ò\n'
+'ã€æ¯æ—¥é˜…è¯»ã€‘:è·å¾—'+dayread.data.amount+'é‡‘å¸\n'
 
 }
 
@@ -488,20 +452,20 @@ resolve()
   }  
 
 
-//ÊÓÆµ½±Àø
+//è§†é¢‘å¥–åŠ±
 function qqreadvideo() {
 return new Promise((resolve, reject) => {
   const toqqreadvideourl ={url: 'https://mqqapi.reader.qq.com/mqq/red_packet/user/watch_video',
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreadvideourl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÊÓÆµ½±Àø: ${data}`)
+     if(logs) $.log(`${jsname}, è§†é¢‘å¥–åŠ±: ${data}`)
      video =JSON.parse(data)
 
 if (video.code==0)
  {
 tz+=
-'¡¾ÊÓÆµ½±Àø¡¿:»ñµÃ'+video.data.amount+'½ğ±Ò\n'
+'ã€è§†é¢‘å¥–åŠ±ã€‘:è·å¾—'+video.data.amount+'é‡‘å¸\n'
 
 }
 
@@ -511,7 +475,7 @@ resolve()
   }  
 
 
-//±¦Ïä½±Àø
+//å®ç®±å¥–åŠ±
 function qqreadbox() {
 return new Promise((resolve, reject) => {
 
@@ -520,13 +484,13 @@ return new Promise((resolve, reject) => {
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreadboxurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ±¦Ïä½±Àø: ${data}`)
+     if(logs) $.log(`${jsname}, å®ç®±å¥–åŠ±: ${data}`)
      box =JSON.parse(data)
 
 if (box.data.count>=0)
  {
 tz+=
-'¡¾±¦Ïä½±Àø'+box.data.count+'¡¿:»ñµÃ'+box.data.amount+'½ğ±Ò\n'
+'ã€å®ç®±å¥–åŠ±'+box.data.count+'ã€‘:è·å¾—'+box.data.amount+'é‡‘å¸\n'
 
  } 
     
@@ -535,7 +499,7 @@ resolve()
    })
   }  
 
-//±¦Ïä½±Àø·­±¶
+//å®ç®±å¥–åŠ±ç¿»å€
 function qqreadbox2() {
 return new Promise((resolve, reject) => {
 
@@ -544,13 +508,13 @@ return new Promise((resolve, reject) => {
     headers: JSON.parse(qqreadheaderVal),
    timeout:60000};
    $.get(toqqreadbox2url,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ±¦Ïä½±Àø·­±¶: ${data}`)
+     if(logs) $.log(`${jsname}, å®ç®±å¥–åŠ±ç¿»å€: ${data}`)
      box2 =JSON.parse(data)
 
 if (box2.code==0)
  {
 tz+=
-'¡¾±¦Ïä·­±¶¡¿:»ñµÃ'+box2.data.amount+'½ğ±Ò\n'
+'ã€å®ç®±ç¿»å€ã€‘:è·å¾—'+box2.data.amount+'é‡‘å¸\n'
 }
 
 resolve()
@@ -558,7 +522,7 @@ resolve()
    })
   }  
 
-//±¾ÖÜÔÄ¶ÁÊ±³¤
+//æœ¬å‘¨é˜…è¯»æ—¶é•¿
 function qqreadwktime() {
 return new Promise((resolve, reject) => {
 
@@ -571,10 +535,10 @@ return new Promise((resolve, reject) => {
     };
 
    $.get(toqqreadwktimeurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÔÄ¶ÁÊ±³¤: ${data}`)
+     if(logs) $.log(`${jsname}, é˜…è¯»æ—¶é•¿: ${data}`)
      wktime =JSON.parse(data)
      if (wktime.code==0)
-tz+='¡¾±¾ÖÜÔÄ¶ÁÊ±³¤¡¿:'+wktime.data.readTime+'·ÖÖÓ\n'
+tz+='ã€æœ¬å‘¨é˜…è¯»æ—¶é•¿ã€‘:'+wktime.data.readTime+'åˆ†é’Ÿ\n'
 
 resolve()
     })
@@ -582,7 +546,7 @@ resolve()
   }  
 
 
-//±¾ÖÜÔÄ¶ÁÊ±³¤½±ÀøÈÎÎñ
+//æœ¬å‘¨é˜…è¯»æ—¶é•¿å¥–åŠ±ä»»åŠ¡
 function qqreadpick() {
 return new Promise((resolve, reject) => {
   const toqqreadpickurl = {
@@ -592,10 +556,10 @@ return new Promise((resolve, reject) => {
 
 if (wktime.data.readTime>=wktimess){
     $.get(toqqreadpickurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname},ÖÜÔÄ¶ÁÊ±³¤½±ÀøÈÎÎñ: ${data}`)
+     if(logs) $.log(`${jsname},å‘¨é˜…è¯»æ—¶é•¿å¥–åŠ±ä»»åŠ¡: ${data}`)
      pick =JSON.parse(data)
      if (pick.data[7].isPick==true)
-tz+='¡¾ÖÜÊ±³¤½±Àø¡¿:ÒÑÈ«²¿ÁìÈ¡\n'
+tz+='ã€å‘¨æ—¶é•¿å¥–åŠ±ã€‘:å·²å…¨éƒ¨é¢†å–\n'
 for(let i=0;i<pick.data.length;i++)
  {
 	setTimeout(()=>{	 
@@ -606,10 +570,10 @@ const toqqreadPackageurl = {
     headers: JSON.parse(qqreadheaderVal),   
  timeout:60000};
     $.get(toqqreadPackageurl,(error, response, data) =>{
-     if(logs) $.log(`${jsname}, ÁìÖÜÔÄ¶ÁÊ±³¤: ${data}`)
+     if(logs) $.log(`${jsname}, é¢†å‘¨é˜…è¯»æ—¶é•¿: ${data}`)
      Package =JSON.parse(data)
      if (Package.code==0)
-tz+='¡¾ÖÜÊ±³¤½±Àø'+(i+1)+'¡¿:ÁìÈ¡'+Packageid[i]+'ÔÄ¶¹\n'    
+tz+='ã€å‘¨æ—¶é•¿å¥–åŠ±'+(i+1)+'ã€‘:é¢†å–'+Packageid[i]+'é˜…è±†\n'    
 })			
     
  },i*100)}
@@ -626,13 +590,13 @@ function showmsg() {
 console.log(tz)
 	
 if (notifyInterval==1)
-$.msg(jsname,'',tz)//ÏÔÊ¾ËùÓĞÍ¨Öª
+$.msg(jsname,'',tz)//æ˜¾ç¤ºæ‰€æœ‰é€šçŸ¥
 
 else if (notifyInterval==2&&task.data.treasureBox.doneFlag==0)
-$.msg(jsname,'',tz)//±¦ÏäÁìÈ¡³É¹¦Í¨Öª
+$.msg(jsname,'',tz)//å®ç®±é¢†å–æˆåŠŸé€šçŸ¥
 
 else if (notifyInterval==3&&task.data.treasureBox.count==0||task.data.treasureBox.count==15||task.data.treasureBox.count==30||task.data.treasureBox.count==45||task.data.treasureBox.count==60)
-$.msg(jsname,'',tz)//±¦ÏäÃ¿15´ÎÍ¨ÖªÒ»´Î
+$.msg(jsname,'',tz)//å®ç®±æ¯15æ¬¡é€šçŸ¥ä¸€æ¬¡
 
 }
 
