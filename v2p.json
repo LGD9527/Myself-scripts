@@ -49,6 +49,15 @@
         "target": "https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js"
       }
     },	
+	   {
+      "name": "京喜工厂收电力",
+      "type": "cron",
+      "time": "10 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/LGD9527/Myself-scripts/master/jd_dreamFactory.js"
+      }
+    },	
     {
       "name": "中青阅读",
       "type": "cron",
