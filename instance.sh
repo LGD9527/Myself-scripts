@@ -5,17 +5,17 @@ trap 'onCtrlC' INT
 # 0=新建 1=升配 默认为0，即新建实例
 Flag=0
 # 区域ID				【availability_domain】
-Available_Domain='xxxx:AP-xxxxx-1-AD-1'
+Available_Domain='rMcd:AP-SEOUL-1-AD-1'
 # 镜像				【【source_id】】
-Image_ID='ocid1.image.oc1.ap-xxxxx-1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+Image_ID='ocid1.image.oc1.ap-seoul-1.aaaaaaaainoavneaw4y4ck2rbj6c3j7ra2rk3lvdxboi5jju6rbfydqkjb2q'
 # 子网ID				【subnet-id】
-Subnet_ID='ocid1.subnet.oc1.ap-xxxxx-1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+Subnet_ID='ocid1.subnet.oc1.ap-seoul-1.aaaaaaaaj7toagj2tyz7vrxc5n57vireealrwxhheukax5hobq67xywkgzjq'
 # 默认申请ARM 请根据需求自行修改，并测试
 Shape='VM.Standard.A1.Flex'
 # 你的公钥			【ssh_authorized_keys】
-SSH_Key_PUB="此处填入Your_Key_Pub"
+SSH_Key_PUB="ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjcA6eeUdjlcRwMI5HxvL3YIrkm6H7x3DkmqO1L6Wd9f16RNqGqN+R08E1jhsT4Wq/6IMj5JfFfaoV8UGEhwyRemuK/DFTpVK/E1bLzSeATAmg4BebZjmQxOwpP4AWy7afS1MA+PS0HHdC/4ZzdcWaP7ZVzajMzfbTVcyThuPKWmfHR8kmbNoyjfImZ3jn9klMAsHR/On3quQXMANf000/QbgzyXoxgDoketcy+kHM25bSN4ou6Ks2J4JfUtgbs8q6XMOEgjEvm2XdYv115Nt1Oqvv7UOoYL5LUUmfTbqgy9oVUEtvFG+kWlUiALkAum+Fc5TgPEGjYzNNf+gY2jhaQ== rsa-key-20210316"
 # 租户ID				【compartment_id】
-Compartment_ID='ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+Compartment_ID='ocid1.tenancy.oc1..aaaaaaaasdeb7x3oyarw45pvt4aab2vxnxcs6i67a5uej6tfa2l5oovaj2sq'
 # 实例CPU数目
 xCPU=4
 # 实例内存大小GB
@@ -29,9 +29,9 @@ InstanceID="ocid1.instance.oc1.ap-xxxxx-1.xxxxxxxxxxxxxx"
 
 #===========================================填写配置区域2====================================================#
 # 消息通知机器人,填入你的机器人token
-TOKEN=xxxxxxxx:xxxxxxxxxxxxxx
+TOKEN=1773965661:AAGxLf_1_9U-67nDq0B4rcfdKqViHNrpfIU
 # 通知接收人的Telegram ID 一般填自己的
-CHAT_ID=xxxxxxxxxxx
+CHAT_ID=1150737363
 # Telegram API 无需更改
 URL="https://api.telegram.org/bot${TOKEN}/sendMessage"
 
