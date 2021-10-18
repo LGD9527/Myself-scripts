@@ -121,7 +121,7 @@ function InstanceUpate(){
 			echo -e "["$current_time"]" "${Font_Red}请设置需要升配的实例ID, 当前实例ID为空。${Font_Suffix}"
 			echo -e "["$current_time"]" "${Font_Red}请设置需要升配的实例ID, 当前实例ID为空。${Font_Suffix}" >> /root/oci_error.log 2>&1
 			Msg_warning="【甲骨文信息】：请设置需要升配的实例ID，当前ID为空。"
-			curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+			curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_warning}"
 			exit 0
 		else
 			echo -e "["$current_time"]" "${Font_Yellow}当前升配实例ID为：${InstanceID}${Font_Suffix}"
@@ -190,35 +190,35 @@ while [[ true ]]; do
 		echo -e "["$current_time"]" "实例状态：${Font_Red}Apply conflict${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"  
 		echo -e "["$current_time"]" "实例状态：${Font_Red}Apply conflict${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
     	Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为Apply conflict"
-		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break
     ;;
     404)
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
 		Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为InvalidParameter or LimitExceed"
-		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break	
     ;;
     401)
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
 		Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为InvalidParameter or LimitExceed"
-		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break
     ;;
     503)
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
 		Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为InvalidParameter or LimitExceed"
-		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break
     ;;
     400)
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"
 		echo -e "["$current_time"]" "实例状态：${Font_Red}InvalidParameter or LimitExceed${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
 		Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为InvalidParameter or LimitExceed"
-		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_success}"
+		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break
     ;;
     401)
