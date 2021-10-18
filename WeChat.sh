@@ -189,7 +189,7 @@ while [[ true ]]; do
     409)
 		echo -e "["$current_time"]" "实例状态：${Font_Red}Apply conflict${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}"  
 		echo -e "["$current_time"]" "实例状态：${Font_Red}Apply conflict${Font_Suffix}, 返回状态：""${Font_Red}${outcome}${Font_Suffix}" >> /root/oci_error.log
-    	Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为Apply conflict"
+    	        Msg_error="【甲骨文信息】：${Instance_Name}申请脚本已停止，返回信息为Apply conflict"
 		curl -s -X POST $URL -d token=${TOKEN} -d content="${Msg_error}"
 		break
     ;;
