@@ -37,24 +37,31 @@ const headers = {
 }
 let login_token = '';
 //需要修改的运动步数波动范围，脚本默认修改步数范围为1w9到2w5
-const step = randomFriendPin($.getdata('xmMinStep1')*1 || 18666, $.getdata('xmMaxStep1')*1 || 18666);
+const step = randomFriendPin($.getdata('xmMinStep2')*1 || 18666, $.getdata('xmMaxStep2')*1 || 18666);
 function getToken() {
   if ($response.body) {
     const body = JSON.parse($response.body);
     const loginToken = body.token_info.login_token;
     $.log(`${$.name}token\n${loginToken}\n`)
-    if ($.getdata('xmSportsToken1')) {
+    if ($.getdata('
+                  
+                  
+                  
+                  
+                  
+                  
+                  ')) {
       $.msg($.name, '更新Token: 成功🎉', ``);
     } else {
       $.msg($.name, '获取Token: 成功🎉', '');
     }
-    $.setdata(loginToken, 'xmSportsToken1');
+    $.setdata(loginToken, 'xmSportsToken2');
   }
   $.done({})
 }
 
 async function start() {
-  login_token = $.isNode() ? (process.env.XM_SPORT_TOKEN ? process.env.XM_SPORT_TOKEN : login_token) : ($.getdata('xmSportsToken1') ? $.getdata('xmSportsToken1') : login_token);
+  login_token = $.isNode() ? (process.env.XM_SPORT_TOKEN ? process.env.XM_SPORT_TOKEN : login_token) : ($.getdata('xmSportsToken2') ? $.getdata('xmSportsToken2') : login_token);
   // console.log(`login_token:::${login_token}`)
   if (login_token) {
     await get_app_token(login_token);
